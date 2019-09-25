@@ -23,7 +23,7 @@ Route::post('login', 'Auth\LoginController@login');
 Route::post('login', 'Auth\LoginController@logout')->name('logout');
 /*注册*/
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('register', 'Auth\LoginController@register');
+Route::post('register', 'Auth\RegisterController@register');
 /*密码重置*/
 
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
